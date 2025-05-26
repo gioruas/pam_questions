@@ -29,11 +29,9 @@ void trim_newline(char *str) {
 
 void ensure_config_dir(const char *home) { 
 
-    char path[512]; 
-
-    snprintf(path, sizeof(path), "%s/%s", home, CONFIG_DIR); 
-
-    mkdir(path, 0700); // Só o dono pode acessar 
+    char caminho[512]; 
+    printf(caminho, sizeof(path), "%s/%s", home, CONFIG_DIR); 
+    mkdir(caminho, 0700); // Só o dono pode acessar 
 
 } 
 
